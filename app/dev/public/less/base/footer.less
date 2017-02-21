@@ -1,0 +1,30 @@
+.footer-bar{
+	width:100%;
+	height:0.44rem;
+	background: #fff;
+	position:fixed;
+	bottom: 0;
+	border-top: 1px solid #eee;
+	nav{
+		width:100%;
+		height: 100%;
+		display: -webkit-box;
+		a{
+			display: block;
+			-webkit-box-flex:1;
+			font-size: 0.12rem;
+			display: -webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			-webkit-box-orient:vertical;
+			color: #ccc;
+			i{
+				font-size: 0.24rem;
+				display: block;
+			}
+			&.active{
+				color: @base-color;
+			}
+		}
+	}
+}

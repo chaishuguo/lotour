@@ -1,0 +1,57 @@
+<header-directive back-btn='false'></header-directive>
+
+<div class="home-page">
+	<div class="swiper-container" id="banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://img1.lotour.net/Home/2017/0216/201702161416290596a.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img1.lotour.net/Home/2017/0216/201702161416290596a.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img1.lotour.net/Home/2017/0216/201702161416290596a.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img1.lotour.net/Home/2017/0216/201702161416290596a.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+	<nav class="lt-list">
+		<a href="javascript:;">
+			<b>90</b>
+			<span>灵感</span>
+		</a>
+		<a href="javascript:;">
+			<b>62</b>
+			<span>旅行家</span>
+		</a>
+		<a href="javascript:;">
+			<b>19</b>
+			<span>国家</span>
+		</a>
+		<a href="javascript:;">
+			<b>54</b>
+			<span>城市</span>
+		</a>
+		<a href="javascript:;">
+			<b>90</b>
+			<span>灵感</span>
+		</a>
+	</nav>
+	<div class="content">
+		<div class="lt-title">
+			<a href="javascript:;"><span>主题</span></a>
+		</div>
+		<nav class="navlist">
+			<ul>
+				<li><a href="javascript:;" class="on">漂流</a></li>
+				<li><a href="javascript:;">古城古镇</a></li>
+				<li><a href="javascript:;">避暑</a></li>
+				<li><a href="javascript:;">田园</a></li>
+				<li><a href="javascript:;">游乐园</a></li>
+				<li><a href="javascript:;">农家乐</a></li><li><a href="javascript:;">海滩海湾</a></li>
+			</ul>
+		</nav>
+		<div class="imgList" infinter-scroll infiniter-load="loadList.load()" infiniter-flg="loadList.flg">
+			<a href="javascript:;" ng-repeat=" item in contentList " ui-sref="detail({id:item._id})">
+				<img src="{{item.Pic}}" alt="" width="690" >
+				<div ng-bind-html="item.Dot | toTrusted"></div>
+			</a>
+		</div>
+	</div>
+</div>
